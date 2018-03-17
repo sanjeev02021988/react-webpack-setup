@@ -17,6 +17,10 @@ module.exports = {
         test: /\.js$/,
         include: SRC_DIR,
         loader: ["babel-loader"]
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       }
     ]
   },
